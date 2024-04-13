@@ -22,8 +22,16 @@ const appendedArray = ['Js', 'Python', 'Java', 'Ruby']
 appendedArray.push('Assembly')
 console.log(appendedArray);
 
-// shift --> removes the fisrt element int the array
+// shift --> removes the fisrt element in the array
 
 const shiftedArray = ['Git', 'VC', 'GitHub', 'Linux']
-shiftedArray.unshift('Kernel')
+shiftedArray.shift('Kernel')
 console.log(shiftedArray);
+
+// unshift --> prepends an element to the array
+
+const unshiftedArray = ['code', 'develop', 'program']
+unshiftedArray.unshift('debug')
+console.log(unshiftedArray);
+
+
