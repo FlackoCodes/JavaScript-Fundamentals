@@ -21,3 +21,9 @@ console.log(poppedArray);
 const appendedArray = ['Js', 'Python', 'Java', 'Ruby']
 appendedArray.push('Assembly')
 console.log(appendedArray);
+
+// shift --> removes the fisrt element int the array
+
+const shiftedArray = ['Git', 'VC', 'GitHub', 'Linux']
+shiftedArray.unshift('Kernel')
+console.log(shiftedArray);
