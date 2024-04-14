@@ -35,3 +35,7 @@ unshiftedArray.unshift('debug')
 console.log(unshiftedArray);
 
 
+// slice --> takes an array and returns a shallow copy of the array
+
+const slicedArray = ['callstack', 'callback', 'prototype', 'stack']
+console.log(slicedArray.slice(0, 2)); // start and end, when end is given, automatically  ends at the last index
