@@ -52,3 +52,9 @@ arry.forEach(element => {
 });
 console.log(max);
 
+
+const users = [
+    {firstName:"Flacko", lastName:"Joe", age:26},
+    {firstName:"King", lastName:"Tito", age:20},
+    {firstName:"Joe", lastName:"Lartey", age:22}
+]
