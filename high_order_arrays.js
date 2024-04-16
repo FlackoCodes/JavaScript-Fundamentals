@@ -56,8 +56,30 @@ console.log(max);
 const users = [
     {firstName:"Flacko", lastName:"Joe", age:26},
     {firstName:"King", lastName:"Tito", age:20},
-    {firstName:"Joe", lastName:"Lartey", age:22}
+    {firstName:"Joe", lastName:"Lartey", age:26},
+    {firstName:"Kwesi", lastName:"David", age:16},
+    {firstName:"Gifty", lastName:"Takyiwaa", age:18},
+    {firstName:"King", lastName:"Salo", age:31},
 ]
+
+
+// firstName of people with age greater than 30
+const fisrtNameOfPeopleAGedThirtyPlus = users.filter((users) => users.age >30).map((users) => users.firstName)
+console.log(fisrtNameOfPeopleAGedThirtyPlus);
+
+
+// age and number of peopl with that same age
+
+const ageAndpeople = users.map ((users) => ({}));
+console.log(ageAndpeople);
+
+
+// list of fullnames
+
+const fullNames = users.map((users) => ({fisrt_name: users.firstName, last_name: users.lastName}))
+console.log(fullNames);
+
+// sum of ages gretaer than twenty
 
 const sumofAgesGreaterThanTwenty = users.filter((users) =>users.age >20).reduce((acc, cur) => acc.age + cur.age)
 console.log(sumofAgesGreaterThanTwenty);
