@@ -58,3 +58,6 @@ const users = [
     {firstName:"King", lastName:"Tito", age:20},
     {firstName:"Joe", lastName:"Lartey", age:22}
 ]
+
+const sumofAgesGreaterThanTwenty = users.filter((users) =>users.age >20).reduce((acc, cur) => acc.age + cur.age)
+console.log(sumofAgesGreaterThanTwenty);
