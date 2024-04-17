@@ -31,6 +31,30 @@ const person2 = {
     age : 26
 }
 
-const  {middlename = "Leslie", nextAge = 27} = person2 // adding new keys
+const  {middlename = "Leslie", nextAge = 27} = person2 // adding new keys which can accessed 
 
 console.log(middlename)
+
+
+// array destructuring 
+
+const arr = ['foo', 'bar', 'zoo']
+
+let [x,y,z ] = arr
+console.log(x);
+
+// skipping items
+
+const  arrayItems = ['code', 'sleep', 'program',]
+
+let [a,,b] = arrayItems // skipping arrayItems[1]
+
+console.log(a);
+console.log(b);
+
+// assigning remaining elements to a single variable with the spread operator
+
+const list = ['foo', 'baa', 'zoo',]
+
+let [var1, ...var2] = list
+console.log(var2);
