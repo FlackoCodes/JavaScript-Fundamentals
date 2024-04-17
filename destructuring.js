@@ -58,3 +58,32 @@ const list = ['foo', 'baa', 'zoo',]
 
 let [var1, ...var2] = list
 console.log(var2);
+
+
+// swapping variables using array destructuring
+let name1 = 'King';
+let name2 = 'Tito';
+
+[name1 , name2] =  [name2, name1];
+console.log(name1);
+
+
+// Nested array destructuring
+
+const obj = {
+    id : 1,
+    name : {
+        fisrt : "Joe",
+        last : "Lartey"
+    }
+}
+
+const {name: { fisrt,  last } } = obj;
+console.log(fisrt);
+
+
+const fullName = ({f_name, l_name}) => `${f_name} ${l_name}`;
+console.log(fullName({
+    f_name : "Flacko",
+    l_name : "Tito"
+}));
