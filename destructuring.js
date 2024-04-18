@@ -19,11 +19,12 @@ console.log(fName, lName);
 let tools = {
     frontend:"Json",
     backend: "NodeJs", 
-    VersionControl: "mercurail"
+    VersionControl: "mercurial"
 }
 
-let { tools:frontend = 'Html, css, Js', toools: VersionControl = 'git'} = tools;
-console.log(frontend, VersionControl);
+let { tools:frontend = 'Html, css, Js', tools: VersionControl = 'git'} = tools;
+console.log(`Json changed to ${frontend}`)
+console.log(`mecurial changed to ${VersionControl} `); 
 
 const person2 = {
     fname : "Joe",
