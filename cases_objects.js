@@ -70,6 +70,28 @@ console.log(myMusic[0].formats[0]);
 myMusic.push({
     artist: "Drake",
     title: "Controller",
+    album: "views"
 })
 
 console.log(myMusic);
+
+const product = {
+    name: "M3 macBook air",
+    color: "mateblack",
+    ratings:{
+        stars: 4.8,
+        numberOfRatings: 263980,
+        totalSales: 999999,
+    },
+    delivery: "1 day",
+    todo: function getitemName() {
+        let productName = product.name
+        return productName
+    }
+
+}
+
+
+console.log(product.todo());
+
+// read more on objects as references
